@@ -2,7 +2,7 @@
   "name": "glowty",
   "version": "0.0.1",
   "private": true,
-  "description": "A simple example library built by tsdown",
+  "description": "Glowty is a beautiful, gesture-friendly toast library for React Native with Expo — built with haptics, keyboard-safe layouts, promise handling, and full UI customization.",
   "type": "module",
   "files": [
     "dist"
