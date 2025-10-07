@@ -16,9 +16,12 @@
   },
   "scripts": {
     "build": "tsdown",
-    "dev": "tsdown --watch"
+    "dev": "tsdown --watch",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "husky": "^9.1.7",
     "tsdown": "latest"
   }
 }
