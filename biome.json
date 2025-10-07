@@ -1,0 +1,111 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
+	"vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
+	"files": { 
+		"includes": [
+			"**",
+			"!**/playground",
+			"!**/website"
+		]
+	 },
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "space",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 180,
+		"attributePosition": "auto",
+		"bracketSameLine": false,
+		"bracketSpacing": true,
+		"expand": "auto",
+		"useEditorconfig": true,
+		"includes": ["**", "!**/playground", "!**/website"]
+	},
+	"linter": { 
+		"enabled": true, 
+		"rules": { 
+			"recommended": true,
+			"complexity": {
+        "noUselessLoneBlockStatements": "warn",
+        "noUselessUndefinedInitialization": "warn",
+        "noVoid": "warn",
+        "useLiteralKeys": "warn",
+        "noAdjacentSpacesInRegex": "warn",
+        "noCommaOperator": "warn"
+      },
+			"correctness": {
+        "noConstAssign": "error",
+        "noConstantCondition": "off",
+        "noEmptyCharacterClassInRegex": "warn",
+        "noGlobalObjectCalls": "warn",
+        "noInnerDeclarations": "off",
+        "noInvalidUseBeforeDeclaration": "off",
+        "noUndeclaredVariables": "error",
+        "noUnreachable": "error",
+        "noUnusedVariables": "warn",
+        "useExhaustiveDependencies": "error",
+        "useHookAtTopLevel": "error",
+        "useIsNan": "warn",
+        "useValidTypeof": "warn"
+      },
+			"style": {
+        "noYodaExpression": "warn",
+        "useBlockStatements": "warn",
+        "useCollapsedElseIf": "off",
+        "useConsistentBuiltinInstantiation": "warn",
+        "useDefaultSwitchClause": "off",
+        "useSingleVarDeclarator": "off",
+        "useExponentiationOperator": "off",
+        "useArrayLiterals": "warn"
+      },
+			"suspicious": {
+        "noCatchAssign": "warn",
+        "noCommentText": "error",
+        "noConsole": {
+          "level": "error",
+          "options": { "allow": ["warn", "error"] }
+        },
+				"noControlCharactersInRegex": "warn",
+        "noDebugger": "warn",
+        "noDoubleEquals": "warn",
+        "noDuplicateClassMembers": "error",
+        "noDuplicateJsxProps": "error",
+        "noDuplicateObjectKeys": "error",
+        "noEmptyBlockStatements": "off",
+        "noFallthroughSwitchClause": "warn",
+        "noFunctionAssign": "warn",
+        "noLabelVar": "warn",
+        "noRedeclare": "off",
+        "noSelfCompare": "warn",
+        "noShadowRestrictedNames": "warn",
+        "noSparseArray": "warn",
+        "noWith": "warn"
+			} 
+		},
+		"includes": ["**", "!**/playground", "!**/website"]
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"trailingCommas": "all",
+			"semicolons": "always",
+			"arrowParentheses": "asNeeded",
+			"bracketSameLine": false,
+			"quoteStyle": "single",
+			"attributePosition": "auto",
+			"bracketSpacing": true
+		}
+	},
+	"html": { "formatter": { "selfCloseVoidElements": "always" } },
+	"assist": {
+		"enabled": true,
+		"actions": { "source": { "organizeImports": "on" } }
+	},
+	"json": {
+		"formatter": {
+			"enabled": false
+		}
+	}
+}

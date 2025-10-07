@@ -17,7 +17,8 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "prepare": "husky"
+    "prepare": "husky",
+		"lint": "biome lint --error-on-warnings ./src"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
