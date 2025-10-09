@@ -1,0 +1,32 @@
+---
+import { Prism } from '@astrojs/prism';
+---
+
+<div id="quick-start" class="relative flex flex-col items-center space-y-8 py-8">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="space-y-4 mb-8">
+        <h2 class="text-3xl sm:text-4xl font-bold font-primary tracking-tight text-secondary">Quick Start</h2>
+        <p class="text-lg text-gray-400 font-secondary">Get up and running in less than a minute</p>
+      </div>
+      <div class="space-y-4">
+        <p class="font-secondary text-gray-400">1. Install the package</p>
+        <Prism code="npm install glowty" lang="bash" />
+      </div>
+      <div class="space-y-4">
+        <p class="font-secondary text-gray-400">2. Import and use in your app</p>
+        <Prism code=`
+import { toast, Toaster } from '@glowty';
+export default function App() {
+	return (
+		<>
+			<Toaster />
+		</>
+	)
+}
+				` lang="typescript" />
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+</div>

@@ -1,29 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@layouts/Layout.astro';
+import HeaderLanding from '@components/header-landing.astro';
+import HeroSection from '@components/hero-section.astro';
+import QuickStart from '@components/quick-start.astro';
+import Features from '@components/features.astro';
+import BundleSizeComparison from '@components/bundle-size-comparison.astro';
+import Footer from '@components/footer.astro';
 ---
 
 <Layout>
-  <div class="min-h-screen w-full flex flex-col items-center bg-primary py-16">
-    <div class="max-w-5xl w-full min-h-screen mx-auto px-4 sm:px-6 lg:px-8">
-      <header></header>
+  <div class="min-h-screen w-full flex flex-col items-center bg-primary py-8">
+    <div class="max-w-6xl w-full min-h-screen mx-auto px-4 sm:px-6 lg:px-8">
+      <HeaderLanding />
       <main>
-        <div id="hero" class="flex flex-col items-center space-y-8">
-          <div class="inline-block">
-            <span class="text-xs px-3 py-1 rounded-full text-gray-200 font-medium bg-dark"> TypeScript • React Native • Expo </span>
-          </div>
-          <h1 class="text-secondary text-5xl sm:text-6xl lg:text-7xl font-bold text-balance tracking-tight text-center">
-            Beautiful Toasts for <span class="text-gray-300">React Native</span>
-          </h1>
-          <p class="text-center text-base sm:text-lg text-gray-400 max-w-2xl text-balance leading-relaxed mx-auto">
-            Beautiful, gesture-friendly toast library for React Native with Expo — built with haptics, keyboard-safe layouts, promise handling, and full UI customization.
-          </p>
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button class="bg-secondary text-primary cursor-pointer"> Get Started </button>
-            <button class="bg-primary text-secondary cursor-pointer"> View Documentation </button>
-          </div>
-        </div>
+        <HeroSection />
+        <QuickStart />
+        <Features />
+        <BundleSizeComparison />
       </main>
-      <footer></footer>
+      <Footer />
     </div>
   </div>
 </Layout>

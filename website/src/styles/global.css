@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
 
 :root {
 	--bg-primary: #0A0A0A;
 	--bg-secondary: #FFFFFF;
 	--bg-dark: #262626;
+	--color-border: #262626;
+	--color-border-white: #FAFAFA;
+	--font-primary: 'Sora', sans-serif;
+	--font-secondary: 'Geist', sans-serif;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -12,4 +19,8 @@
 	--color-primary: var(--bg-primary);
 	--color-secondary: var(--bg-secondary);
 	--color-dark: var(--bg-dark);
+	--color-border: var(--color-border);
+	--color-border-white: var(--color-border-white);
+	--font-primary: var(--font-primary);
+	--font-secondary: var(--font-secondary);
 }
