@@ -11,13 +11,17 @@ const themes = {
       'subtitle': colors.neutral[300],
       'body-large': colors.neutral[300],
       'body-small': colors.neutral[400],
-      'button': colors.neutral[900],
+      'button': colors.neutral[800],
       'caption': colors.neutral[500],
       'overline': colors.neutral[600],
     },
     border: {
       light: colors.neutral[700],
       main: colors.neutral[600],
+    },
+    toast: {
+      background: colors.neutral[800],
+      color: colors.neutral[100],
     },
   },
   light: {
@@ -37,6 +41,10 @@ const themes = {
     border: {
       light: colors.neutral[300],
       main: colors.neutral[400],
+    },
+    toast: {
+      background: colors.neutral[100],
+      color: colors.neutral[900],
     },
   },
 };
